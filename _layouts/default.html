@@ -26,10 +26,10 @@
 
         <div class="trigger">
           <a class="page-link" href="{{ '/' | relative_url }}">Home</a>
-          <a class="page-link" href="{{ '/about' | relative_url }}">Chi Siamo</a>
-          <a class="page-link" href="{{ '/research' | relative_url }}">Ricerca</a>
           <a class="page-link" href="{{ '/publications' | relative_url }}">Pubblicazioni</a>
-          <a class="page-link" href="{{ '/courses' | relative_url }}">Corsi</a>
+          <a class="page-link" href="{{ '/research' | relative_url }}">Ricerca</a>
+          <a class="page-link" href="{{ '/teaching' | relative_url }}">Didattica</a>
+          <a class="page-link" href="{{ '/cv' | relative_url }}">CV</a>
           <a class="page-link" href="{{ '/contact' | relative_url }}">Contatti</a>
         </div>
       </nav>
@@ -47,25 +47,37 @@
       <div class="footer-col-wrapper">
         <div class="footer-col">
           <h2 class="footer-heading">{{ site.title | escape }}</h2>
-          <p>{{ site.description | escape }}</p>
+          <p>{{ site.position }} presso {{ site.institution }}</p>
         </div>
         <div class="footer-col">
           <h2>Contatti</h2>
           <ul class="contact-list">
             <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {% if site.phone %}
+            <li>{{ site.phone }}</li>
+            {% endif %}
+            {% if site.office %}
+            <li>{{ site.office }}</li>
+            {% endif %}
           </ul>
         </div>
         <div class="footer-col">
-          <h2>Social</h2>
+          <h2>Collegamenti</h2>
           <ul class="social-media-list">
             {% if site.social_links.github %}
-            <li><a href="https://github.com/{{ site.social_links.github }}">GitHub</a></li>
-            {% endif %}
-            {% if site.social_links.twitter %}
-            <li><a href="https://twitter.com/{{ site.social_links.twitter }}">Twitter</a></li>
+            <li><a href="https://github.com/{{ site.social_links.github }}" target="_blank">GitHub</a></li>
             {% endif %}
             {% if site.social_links.linkedin %}
-            <li><a href="https://www.linkedin.com/in/{{ site.social_links.linkedin }}">LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/{{ site.social_links.linkedin }}" target="_blank">LinkedIn</a></li>
+            {% endif %}
+            {% if site.social_links.twitter %}
+            <li><a href="https://twitter.com/{{ site.social_links.twitter }}" target="_blank">Twitter</a></li>
+            {% endif %}
+            {% if site.social_links.scholar %}
+            <li><a href="https://scholar.google.com/citations?user={{ site.social_links.scholar }}" target="_blank">Google Scholar</a></li>
+            {% endif %}
+            {% if site.social_links.orcid %}
+            <li><a href="https://orcid.org/{{ site.social_links.orcid }}" target="_blank">ORCID</a></li>
             {% endif %}
           </ul>
         </div>
