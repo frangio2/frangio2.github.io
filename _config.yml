@@ -1,44 +1,69 @@
-# Informazioni del sito
-title: Sito Accademico
+# Informazioni personali
+title: Nome Cognome
+position: Posizione Accademica (es. Professore Associato, Ricercatore, ecc.)
+institution: Nome dell'Università o Istituzione
+bio: >-
+  Qui puoi inserire la tua biografia più estesa, includendo informazioni sulla tua formazione, 
+  esperienza professionale, interessi di ricerca, riconoscimenti ricevuti e altri dettagli rilevanti.
+  Questa sezione può essere di diverse righe e apparirà nella pagina principale del sito.
+  Puoi descrivere i tuoi obiettivi di ricerca, il tuo approccio metodologico,
+  e le principali aree di interesse. È anche possibile menzionare collaborazioni significative
+  e progetti in corso. Personalizza questa sezione per rappresentare al meglio 
+  il tuo profilo accademico e professionale.
+
+# Informazioni di contatto
 email: email@example.com
-description: >-
-  Un sito accademico moderno e professionale per condividere ricerche, 
-  pubblicazioni e attività didattiche.
-about_short: >-
-  Un gruppo di ricercatori dedicati all'avanzamento della conoscenza scientifica
-  attraverso la ricerca innovativa e la collaborazione interdisciplinare.
-baseurl: "" # il percorso sottodominio del sito, es. /blog
-url: "" # il dominio base, es. http://example.com
+department: Dipartimento di ...
+office: Edificio X, Ufficio Y
+address: Indirizzo completo dell'istituzione
+phone: "+39 123 456 7890"
 
-# Aree di ricerca (facilmente modificabili)
-research_areas:
-  - title: Area di Ricerca 1
-    description: Descrizione breve dell'area di ricerca e dei progetti correlati.
-  - title: Area di Ricerca 2
-    description: Descrizione breve dell'area di ricerca e dei progetti correlati.
-  - title: Area di Ricerca 3
-    description: Descrizione breve dell'area di ricerca e dei progetti correlati.
-
-# Collegamenti social
+# Collegamenti social e accademici
 social_links:
+  email: email@example.com
   github: username
   twitter: username
   linkedin: username
+  scholar: ID_GOOGLE_SCHOLAR # ID di Google Scholar
+  orcid: 0000-0000-0000-0000 # ID ORCID
+  researchgate: Nome_Cognome # Nome utente di ResearchGate
 
-# Membri del team (facilmente modificabili)
-team_members:
-  - name: Prof. Nome Cognome
-    title: Direttore del Dipartimento
-    bio: Breve biografia del professore e delle sue aree di ricerca.
-    image: assets/images/placeholder.jpg
-  - name: Dr. Nome Cognome
-    title: Ricercatore Senior
-    bio: Breve biografia del ricercatore e delle sue aree di ricerca.
-    image: assets/images/placeholder.jpg
-  - name: Nome Cognome
-    title: Dottorando
-    bio: Breve biografia del dottorando e delle sue aree di ricerca.
-    image: assets/images/placeholder.jpg
+# Interessi di ricerca
+research_interests:
+  - Interesse di ricerca 1
+  - Interesse di ricerca 2
+  - Interesse di ricerca 3
+  - Interesse di ricerca 4
+  - Interesse di ricerca 5
+
+# Pubblicazioni in evidenza
+featured_publications:
+  - title: Titolo della pubblicazione 1
+    authors: Cognome, N., Coautore, A., Coautore, B.
+    journal: Nome della Rivista, Volume(Numero), pagine
+    year: 2025
+    doi: 10.1000/xyz123
+    pdf: /assets/papers/paper1.pdf
+    code: https://github.com/username/repository
+  
+  - title: Titolo della pubblicazione 2
+    authors: Cognome, N., Coautore, C., Coautore, D.
+    journal: Nome della Rivista, Volume(Numero), pagine
+    year: 2024
+    doi: 10.1000/xyz456
+    pdf: /assets/papers/paper2.pdf
+    
+  - title: Titolo della pubblicazione 3
+    authors: Coautore, E., Cognome, N., Coautore, F.
+    journal: Nome della Rivista, Volume(Numero), pagine
+    year: 2023
+    doi: 10.1000/xyz789
+    pdf: /assets/papers/paper3.pdf
+    code: https://github.com/username/repository2
+
+# URL base e configurazioni
+baseurl: "" # il percorso sottodominio del sito, es. /blog
+url: "" # il dominio base, es. http://example.com
 
 # Configurazione di build
 markdown: kramdown
@@ -52,9 +77,12 @@ collections:
   publications:
     output: true
     permalink: /publications/:path/
-  courses:
+  teaching:
     output: true
-    permalink: /courses/:path/
+    permalink: /teaching/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
 
 # Esclusioni dalla build
 exclude:
