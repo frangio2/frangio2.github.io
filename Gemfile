@@ -12,6 +12,13 @@ group :jekyll_plugins do
   gem "jekyll-seo-tag", "~> 2.7"
 end
 
+# Aggiungi le gemme necessarie per Ruby 3.4+
+gem "csv"
+gem "base64"
+gem "bigdecimal"
+gem "logger"
+gem "webrick"  # WebRick è necessario per il server di sviluppo
+
 # Windows e JRuby non includono zoneinfo files, quindi aggiungi la gem tzinfo-data
 # e le gems di dipendenze associate
 platforms :mingw, :x64_mingw, :mswin, :jruby do
@@ -22,7 +29,7 @@ end
 # Per Performance e congruenza quando si esegue su Windows
 # può essere necessario installare le gem eventmachine e wdm
 gem "eventmachine", "~> 1.2.7", :platforms => [:mingw, :x64_mingw, :mswin]
-gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
 
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds as newer versions require
 # Ruby >= 2.0
