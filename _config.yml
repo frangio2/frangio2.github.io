@@ -1,0 +1,66 @@
+# Informazioni del sito
+title: Sito Accademico
+email: email@example.com
+description: >-
+  Un sito accademico moderno e professionale per condividere ricerche, 
+  pubblicazioni e attività didattiche.
+about_short: >-
+  Un gruppo di ricercatori dedicati all'avanzamento della conoscenza scientifica
+  attraverso la ricerca innovativa e la collaborazione interdisciplinare.
+baseurl: "" # il percorso sottodominio del sito, es. /blog
+url: "" # il dominio base, es. http://example.com
+
+# Aree di ricerca (facilmente modificabili)
+research_areas:
+  - title: Area di Ricerca 1
+    description: Descrizione breve dell'area di ricerca e dei progetti correlati.
+  - title: Area di Ricerca 2
+    description: Descrizione breve dell'area di ricerca e dei progetti correlati.
+  - title: Area di Ricerca 3
+    description: Descrizione breve dell'area di ricerca e dei progetti correlati.
+
+# Collegamenti social
+social_links:
+  github: username
+  twitter: username
+  linkedin: username
+
+# Membri del team (facilmente modificabili)
+team_members:
+  - name: Prof. Nome Cognome
+    title: Direttore del Dipartimento
+    bio: Breve biografia del professore e delle sue aree di ricerca.
+    image: assets/images/placeholder.jpg
+  - name: Dr. Nome Cognome
+    title: Ricercatore Senior
+    bio: Breve biografia del ricercatore e delle sue aree di ricerca.
+    image: assets/images/placeholder.jpg
+  - name: Nome Cognome
+    title: Dottorando
+    bio: Breve biografia del dottorando e delle sue aree di ricerca.
+    image: assets/images/placeholder.jpg
+
+# Configurazione di build
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Struttura delle pagine
+collections:
+  publications:
+    output: true
+    permalink: /publications/:path/
+  courses:
+    output: true
+    permalink: /courses/:path/
+
+# Esclusioni dalla build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+  - README.md
