@@ -69,4 +69,27 @@ Per maggiori informazioni su queste opportunità, contattaci [qui](/contact).
 
 ## Collaborazioni
 
-Collaboriamo att
+Collaboriamo attivamente con diverse istituzioni accademiche e partner industriali per promuovere la ricerca interdisciplinare e l'innovazione. Alcune delle nostre principali collaborazioni includono:
+
+- **Università e Centri di Ricerca Nazionali**: [Elenco di collaborazioni nazionali]
+- **Partner Internazionali**: [Elenco di collaborazioni internazionali]
+- **Partner Industriali**: [Elenco di partner industriali]
+- **Reti di Ricerca**: Partecipiamo a diverse reti di ricerca tematiche che facilitano lo scambio di conoscenze e la collaborazione tra ricercatori.
+
+## Pubblicazioni Recenti
+
+Per una panoramica completa delle nostre pubblicazioni recenti, visita la [pagina delle pubblicazioni](/publications/).
+
+## Conferenze e Workshop
+
+Organizziamo e partecipiamo regolarmente a conferenze e workshop nazionali e internazionali nel nostro campo di ricerca. Questi eventi offrono opportunità di networking e di condivisione delle conoscenze con altri ricercatori.
+
+### Prossimi Eventi
+
+- **[Nome Conferenza]**: [Data], [Luogo]
+- **[Nome Workshop]**: [Data], [Luogo]
+
+### Eventi Passati
+
+- **[Nome Conferenza]**: [Data], [Luogo]
+- **[Nome Workshop]**: [Data], [Luogo]
