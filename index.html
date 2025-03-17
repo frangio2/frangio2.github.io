@@ -1,0 +1,43 @@
+---
+layout: default
+title: Home
+---
+
+<div class="home-container">
+  <div class="jumbotron">
+    <h1>{{ site.title }}</h1>
+    <p class="lead">{{ site.description }}</p>
+  </div>
+
+  <div class="content-section">
+    <h2>Ultimi Articoli</h2>
+    <div class="posts-grid">
+      {% for post in site.posts limit:3 %}
+      <div class="post-card">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p class="post-meta">{{ post.date | date: "%d/%m/%Y" }}</p>
+        <p>{{ post.excerpt }}</p>
+        <a href="{{ post.url | relative_url }}" class="read-more">Leggi tutto →</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2>Chi Siamo</h2>
+    <p>{{ site.about_short }}</p>
+    <a href="{{ '/about' | relative_url }}" class="btn btn-primary">Scopri di più</a>
+  </div>
+
+  <div class="content-section">
+    <h2>Ricerca</h2>
+    <div class="research-areas">
+      {% for area in site.research_areas %}
+      <div class="research-area">
+        <h3>{{ area.title }}</h3>
+        <p>{{ area.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
